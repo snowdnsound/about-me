@@ -1,0 +1,28 @@
+header {
+    background-color: rgb(33, 92, 103);
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color:aliceblue;
+}
+
+
+
+body {
+    background-color: #043d41;
+    font-family: sans-serif;  
+}
+
+p {
+    color:aliceblue; 
+}
+
+h2 {
+    color: #f3a54c;
+}
+
+ul {
+    color:aliceblue; 
+}
