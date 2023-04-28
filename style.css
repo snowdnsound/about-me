@@ -2,6 +2,9 @@ header {
     background-color: rgb(33, 92, 103);
     text-align: center;
     padding: 40px;
+    border-style: solid;
+    border-width:medium;
+    border-radius: 25px;
 }
 
 h1 {
