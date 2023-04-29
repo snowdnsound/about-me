@@ -5,12 +5,20 @@ header {
     border-style: solid;
     border-width:medium;
     border-radius: 25px;
+    transition: 2s all;
+    
 }
+
+header:hover {
+    background: rgb(0, 0, 0);
+    text-align: left;
+}
+
 
 h1 {
     color:aliceblue;
-}
 
+}
 
 
 body {
@@ -26,6 +34,15 @@ h2 {
     color: #f3a54c;
 }
 
+h2:hover {
+    color:rgb(206, 143, 255)
+}
+
 ul {
     color:aliceblue; 
 }
+
+ol {
+    color:aliceblue; 
+}
+
