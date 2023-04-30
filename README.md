@@ -12,4 +12,4 @@
   
 ## Lighthouse Score
 
-![Lighthouse Score](images/LighthouseScore.png?raw=true "Lighthouse Score")
+![Lighthouse Score](images/LighthouseScore2023-04-29.png?raw=true "Lighthouse Score")
