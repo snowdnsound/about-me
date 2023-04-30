@@ -1,7 +1,7 @@
 header {
     background-color: rgb(33, 92, 103);
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     border-style: solid;
     border-width:medium;
     border-radius: 25px;
@@ -12,6 +12,7 @@ header {
 header:hover {
     background: rgb(0, 0, 0);
     text-align: left;
+    border-radius: 30%;
 }
 
 
@@ -28,14 +29,18 @@ body {
 
 p {
     color:aliceblue; 
+    margin: 20px;
+    max-width: 70%;
 }
 
 h2 {
     color: #f3a54c;
+    margin: 20px;
 }
 
 h2:hover {
-    color:rgb(206, 143, 255)
+    color:rgb(206, 143, 255);
+    
 }
 
 ul {
@@ -44,5 +49,15 @@ ul {
 
 ol {
     color:aliceblue; 
+}
+
+img {
+    border-style: solid;
+    border-width:medium;
+    border-radius: 25px;
+    margin: 20px;
+
+
+
 }
 
