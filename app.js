@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 let userName = prompt('What is your name?');
 let score = 0;
 let theirName = 'Welcome to my site ' + userName + ' but before we go there, how about we play a guessing game!';
@@ -166,5 +166,3 @@ if (!guessedColorCorrectly) {
 console.log('YOUR SCORE IS: ' + score);
 let theMessage = 'Thanks for playing ' + userName + ' your score is ' + score + '.' + ' Enough of that, let\'s go to my page!';
 alert(theMessage);
-
-

@@ -6,13 +6,16 @@ header {
     border-width:medium;
     border-radius: 25px;
     transition: 2s all;
+    max-width: 70%;
     
 }
 
 header:hover {
     background: rgb(0, 0, 0);
     text-align: left;
+    color:rgb(206, 143, 255);
     border-radius: 30%;
+    
 }
 
 
