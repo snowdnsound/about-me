@@ -35,7 +35,6 @@ if (gamerQuestion.toLowerCase() === 'yes' || gamerQuestion.toLowerCase() === 'y'
 }
 
 
-
 let juggleQuestion = prompt('Can I juggle? Yes/No?');
 let correctJuggle = 'No, I can\'t do everything sheesh!';
 let wrongJuggle = 'Correct, no knife tossing for me.';
@@ -48,7 +47,6 @@ if (juggleQuestion.toLowerCase() === 'yes' || juggleQuestion.toLowerCase() === '
   alert(wrongJuggle);
   score--;
 }
-
 
 
 let musicQuestion = prompt('Do I like to make music? Yes/No?');
@@ -65,7 +63,6 @@ if (musicQuestion.toLowerCase() === 'yes' || musicQuestion.toLowerCase() === 'y'
 }
 
 
-
 let cookQuestion = prompt('Do I like to cook? Yes/No?');
 let correctCook = 'Nope. But I do try!';
 let wrongCook = 'Correct, maybe my lazy developer mindset is affecting other areas...';
@@ -79,50 +76,72 @@ if (cookQuestion.toLowerCase() === 'yes' || cookQuestion.toLowerCase() === 'y') 
   score--;
 }
 
+
 let correctAnswer = 6;
 let attemptsRemaining = 4;
 let guessedCorrectly = false;
 
 while (attemptsRemaining > 0 && !guessedCorrectly) {
-  let guess = prompt('Guess a number between 1 and 10:');
-  let parsedGuess = Number(guess);
+  let guess = prompt('Guess a number between 1 and 10?');
+  let guessNumber = Number(guess);
 
-  if (guess !== null && guess !== '' && parsedGuess === parsedGuess) {
-    if (parsedGuess === correctAnswer) {
-      guessedCorrectly = true;
-      alert('Congratulations! You guessed the correct number.');
-    } else if (parsedGuess > correctAnswer) {
-      attemptsRemaining--;
-      alert('Too high! You have ' + attemptsRemaining + ' attempts remaining.');
-    } else if (parsedGuess < correctAnswer) {
-      attemptsRemaining--;
-      alert('Too low! You have ' + attemptsRemaining + ' attempts remaining.');
-    }
+  if (guessNumber === correctAnswer) {
+    // the guess was correct
+    guessedCorrectly = true;
+    alert('Congratulations! You guessed the correct number.');
+    score++;
+  } else if (guessNumber > correctAnswer) {
+    // the guess was too high
+    attemptsRemaining--;
+    alert('Too high! You have ' + attemptsRemaining + ' attempts remaining.');
   } else {
-    alert('Invalid input! Please enter a valid number.');
+    // the guess was too low
+    attemptsRemaining--;
+    alert('Too low! You have ' + attemptsRemaining + ' attempts remaining.');
   }
 }
 
 if (!guessedCorrectly) {
   alert('Sorry, you did not guess the correct number. The correct answer was ' + correctAnswer + '.');
+  score--;
 }
 
-if (!guessedCorrectly) {
-  alert('Sorry, you did not guess the correct number. The correct answer was ' + correctAnswer + '.');
+let correctColorAnswer = ['purple', 'green', 'blue'];
+let colorAttemptsRemaining = 6;
+let guessedColorCorrectly = false;
+
+while (colorAttemptsRemaining > 0 && !guessedColorCorrectly) {
+  let guessColor = prompt('Guess one of my favorite colors? Red, blue, green, yellow, purple, pink, white or black?');
+
+  let isCorrect = false;
+  for (let i = 0; i < correctColorAnswer.length; i++) {
+    if (guessColor.toLowerCase() === correctColorAnswer[i]) {
+      isCorrect = true;
+      break;
+    }
+  }
+
+  if (isCorrect) {
+    // the guess was correct
+    guessedColorCorrectly = true;
+    alert('Congratulations! You guessed a correct color!');
+    score++;
+  } else {
+    // the guess was not right
+    colorAttemptsRemaining--;
+    alert('Nope! You have ' + colorAttemptsRemaining + ' attempts remaining.');
+  }
+}
+
+if (!guessedColorCorrectly) {
+  alert('Sorry, you did not guess the correct color. The correct answer was ' + correctColorAnswer + '.');
+  score--;
 }
 
 
-
+//final message to named user at end
 console.log('YOUR SCORE IS: ', score);
 let theMessage = 'Thanks for playing ' + userName + ' your score is ' + score + '.' + ' Enough of that, let\'s go to my page!';
 alert(theMessage);
 
 
-
-
-
-
-
-
-
-//final message to named user at end
