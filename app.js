@@ -82,7 +82,7 @@ if (musicQuestion.toLowerCase() === 'yes' || musicQuestion.toLowerCase() === 'y'
 }
 }
 
-
+function cook() {
 let cookQuestion = prompt('Do I like to cook? Yes/No?');
 console.log('Do I like to cook?');
 let correctCook = 'Correct, maybe my lazy developer mindset is affecting other areas...';
@@ -97,6 +97,7 @@ if (cookQuestion.toLowerCase() === 'no' || cookQuestion.toLowerCase() === 'n') {
   alert(wrongCook);
   score--;
   console.log(score);
+}
 }
 
 
@@ -174,6 +175,8 @@ cat();
 gamer();
 juggle();
 music();
+cook();
+
 
 
 
