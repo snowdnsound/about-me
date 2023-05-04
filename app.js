@@ -64,7 +64,7 @@ if (juggleQuestion.toLowerCase() === 'no' || juggleQuestion.toLowerCase() === 'n
 }
 
 
-
+function music() {
 let musicQuestion = prompt('Do I like to make music? Yes/No?');
 console.log('Do I like to make music?');
 let correctMusic = 'Yes, mostly electronic/ambient music';
@@ -80,7 +80,7 @@ if (musicQuestion.toLowerCase() === 'yes' || musicQuestion.toLowerCase() === 'y'
   score--;
   console.log(score);
 }
-
+}
 
 
 let cookQuestion = prompt('Do I like to cook? Yes/No?');
@@ -173,6 +173,8 @@ welcome();
 cat();
 gamer();
 juggle();
+music();
+
 
 
 //final message to named user at end
