@@ -9,7 +9,7 @@ console.log(userName);
 alert(theirName);
 }
 
-function cat (){
+function cat(){
 let catQuestion = prompt('Do I have cats? Yes/No?');
 console.log('Do I have cats?');
 let correctCat = 'That is correct!';
@@ -45,7 +45,7 @@ if (gamerQuestion.toLowerCase() === 'yes' || gamerQuestion.toLowerCase() === 'y'
 }
 }
 
-
+function juggle() {
 let juggleQuestion = prompt('Can I juggle? Yes/No?');
 console.log('Can I juggle?');
 let correctJuggle = 'Correct, no knife tossing for me.';
@@ -61,7 +61,7 @@ if (juggleQuestion.toLowerCase() === 'no' || juggleQuestion.toLowerCase() === 'n
   score--;
   console.log(score);
 }
-
+}
 
 
 
@@ -172,6 +172,7 @@ if (!guessedColorCorrectly) {
 welcome();
 cat();
 gamer();
+juggle();
 
 
 //final message to named user at end
