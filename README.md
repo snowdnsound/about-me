@@ -13,3 +13,10 @@
 ## Lighthouse Score
 
 ![Lighthouse Score](images/LighthouseScore2023-04-29.png?raw=true "Lighthouse Score")
+
+## Paired Programming
+
+- Driver: Drew Stroede
+- Navigator: Justin Benjamin
+We worked on this code together. Team work makes the dream work.
+
