@@ -9,7 +9,7 @@ console.log(userName);
 alert(theirName);
 }
 
-
+function cat (){
 let catQuestion = prompt('Do I have cats? Yes/No?');
 console.log('Do I have cats?');
 let correctCat = 'That is correct!';
@@ -25,7 +25,7 @@ if (catQuestion.toLowerCase() === 'yes' || catQuestion.toLowerCase() === 'y') {
   score--;
   console.log(score);
 }
-
+}
 
 
 let gamerQuestion = prompt('Am I a gamer? Yes/No?');
@@ -170,7 +170,7 @@ if (!guessedColorCorrectly) {
 }
 
 welcome();
-
+cat();
 
 //final message to named user at end
 console.log('YOUR SCORE IS: ' + score);
