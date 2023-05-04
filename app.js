@@ -100,7 +100,7 @@ if (cookQuestion.toLowerCase() === 'no' || cookQuestion.toLowerCase() === 'n') {
 }
 }
 
-
+function favNum() {
 let correctAnswer = 6;
 let attemptsRemaining = 4;
 let guessedCorrectly = false;
@@ -132,6 +132,7 @@ if (!guessedCorrectly) {
   alert('Sorry, you did not guess the correct number. The correct answer was ' + correctAnswer + '.');
   score--;
   console.log(score);
+}
 }
 
 
