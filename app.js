@@ -1,10 +1,13 @@
 'use strict';
 
 let userName = prompt('What is your name?');
+console.log(userName);
 let score = 0;
+function welcome() {
 let theirName = 'Welcome to my site ' + userName + ' but before we go there, how about we play a guessing game!';
 console.log(userName);
 alert(theirName);
+}
 
 
 let catQuestion = prompt('Do I have cats? Yes/No?');
@@ -24,6 +27,7 @@ if (catQuestion.toLowerCase() === 'yes' || catQuestion.toLowerCase() === 'y') {
 }
 
 
+
 let gamerQuestion = prompt('Am I a gamer? Yes/No?');
 console.log('Am I a gamer?');
 let correctGamer = 'That is correct!';
@@ -39,6 +43,7 @@ if (gamerQuestion.toLowerCase() === 'yes' || gamerQuestion.toLowerCase() === 'y'
   score--;
   console.log(score);
 }
+
 
 
 let juggleQuestion = prompt('Can I juggle? Yes/No?');
@@ -58,6 +63,8 @@ if (juggleQuestion.toLowerCase() === 'no' || juggleQuestion.toLowerCase() === 'n
 }
 
 
+
+
 let musicQuestion = prompt('Do I like to make music? Yes/No?');
 console.log('Do I like to make music?');
 let correctMusic = 'Yes, mostly electronic/ambient music';
@@ -73,6 +80,7 @@ if (musicQuestion.toLowerCase() === 'yes' || musicQuestion.toLowerCase() === 'y'
   score--;
   console.log(score);
 }
+
 
 
 let cookQuestion = prompt('Do I like to cook? Yes/No?');
@@ -161,8 +169,14 @@ if (!guessedColorCorrectly) {
   console.log(score);
 }
 
+welcome();
+
 
 //final message to named user at end
 console.log('YOUR SCORE IS: ' + score);
 let theMessage = 'Thanks for playing ' + userName + ' your score is ' + score + '.' + ' Enough of that, let\'s go to my page!';
 alert(theMessage);
+
+
+
+
