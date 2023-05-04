@@ -27,7 +27,7 @@ if (catQuestion.toLowerCase() === 'yes' || catQuestion.toLowerCase() === 'y') {
 }
 }
 
-
+function gamer() {
 let gamerQuestion = prompt('Am I a gamer? Yes/No?');
 console.log('Am I a gamer?');
 let correctGamer = 'That is correct!';
@@ -43,7 +43,7 @@ if (gamerQuestion.toLowerCase() === 'yes' || gamerQuestion.toLowerCase() === 'y'
   score--;
   console.log(score);
 }
-
+}
 
 
 let juggleQuestion = prompt('Can I juggle? Yes/No?');
@@ -171,6 +171,8 @@ if (!guessedColorCorrectly) {
 
 welcome();
 cat();
+gamer();
+
 
 //final message to named user at end
 console.log('YOUR SCORE IS: ' + score);
