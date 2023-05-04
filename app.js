@@ -135,7 +135,7 @@ if (!guessedCorrectly) {
 }
 }
 
-
+function favColor() {
 let correctColorAnswer = ['purple', 'green', 'blue'];
 console.log('Guess one of my favorite colors?');
 let colorAttemptsRemaining = 6;
@@ -170,6 +170,7 @@ if (!guessedColorCorrectly) {
   score--;
   console.log(score);
 }
+}
 
 welcome();
 cat();
@@ -177,8 +178,8 @@ gamer();
 juggle();
 music();
 cook();
-
-
+favNum();
+favColor();
 
 
 //final message to named user at end
