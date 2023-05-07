@@ -19,4 +19,3 @@
 - Driver: Drew Stroede
 - Navigator: Justin Benjamin
 We worked on this code together. Team work makes the dream work.
-
